@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+.main-login{
+    background-image: linear-gradient(rgba(8, 68, 81,0.5),transparent),url(images/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: rgba(4, 34, 38,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 26px;
+    width: 40vw;
+    height: 60vh;
+
+}
+.login h2{
+    padding: 2rem;
+    font-size: 5rem;
+    color: #71C4D7;
+}
+.form h2{
+padding: 1rem;
+    font-size: 4rem;
+    color: #71C4D7;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.email-form,.password-form,.login-form{
+    padding: 2.5rem;
+    
+}
+.email-form,.password-form,.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email,.password{
+    padding: 1.5rem 8rem;
+    border-radius: 2px;
+    text-align: center;
+    color: #182c3d;
+    text-decoration: none;
+    
+}
+.email-form{
+    margin: 0rem 4rem;
+}
+.email-form p{
+    font-size: 2rem;
+    padding: 3rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+.forgot{
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+.forgot a{
+    color: #71C4D7;
+    text-decoration: none;
+}
+.submit{
+    padding: 2rem 6rem;
+  background: #224664;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 0.5s ease-in-out ;
+  margin-top: 0.5rem;
+}
+.submit:hover{
+  background-color: #182c3d;
+}
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+    .form{
+        width: 70%;
+        height: 60vh;
+    }
+}

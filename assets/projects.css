@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+h3 {
+  font-size: 3rem;
+    
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 1rem;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+ 
+}
+ul li a:hover{
+  color: rgb(212, 204, 204);
+
+}
+.main-head {
+  background: #07131d;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  padding:0 6rem;
+} 
+nav {
+    display: flex;
+    min-width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;    
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo {
+  flex: 1 1 40rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  
+}
+.active{
+    color: #155662;
+}
+.main{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    flex: 1 1 40rem;
+    
+}
+.image{
+    width: 40rem;
+    height: 30rem;
+    margin: 2rem;
+
+}
+.card{
+    margin: 2.5rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #036d7b;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45), 0px 6px 25px rgba(0, 0, 0, 0.30), 0px 5px 35px rgba(0, 0, 0, 0.25);
+}
+.top{
+    background: #00353c;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+.h2{
+    padding: 2rem;
+    text-align: center;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+button{
+    padding: 2rem 6rem;
+  background: #224664;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 0.5s ease-in-out ;
+  margin: 2rem;
+}
+button:hover{
+  background-color: #182c3d;
+}
+.curser{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #6abcaf;
+    border-radius: 50%;
+    position: absolute;
+     transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: transform;
+  transform-origin: 75% 75%;
+  overflow: hidden;
+}
+
+.curser.curtser-naver,.curtser-logo{
+  background: rgb(4, 44, 63);
+  transform: scale(3);
+}
+.cursor-text{
+  transform: translate(-50%, -50%);
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 0.65rem;
+}
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+    .hero{
+        font-size: 0.5rem;
+    }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+    .image{
+        width: 30rem;
+    height: 25rem;
+    }
+    a{
+        font-size: 2rem
+    }
+    .h2 h2{
+        font-size: 3rem;
+    }
+    .h3 h3{
+        font-size: 2rem;
+    }
+    .h5 h5{
+        font-size: 1rem;
+    }
+    button{
+         padding: 1rem 3rem;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,40 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'login.css'%}">
+  <title>Login</title>
+</head>
+<body>
+  <div class="main-login">
+    <div class="form">
+      <form class="login" action="login" method="post">
+        {%csrf_token%}
+          <h2>Login</h2>
+        <div class="email-form">
+          <input type="text" placeholder="username" name="username" class="email">
+          </div>
+          <div class="password-form">
+          <input type="password" placeholder="password" name="password" class="password">
+          </div>
+        <div class="forgot">
+          <a href="reset_password">Forgot password</a>
+          </div>
+          <div class="login-form">
+          <button type="submit" class="submit">Login</button>
+              </div>
+        </form>
+      </div>
+    </div>
+<script>
+        {% for message in messages%}
+    function PopUp() {
+      alert("{{message}}");
+       {%endfor%}
+        }
+     PopUp();
+</script>
+</body>
+</html>

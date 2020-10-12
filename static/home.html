@@ -1,0 +1,187 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="mini projects for bigeners"
+    />
+    <meta name="robots" content="index,follow" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Cousine:wght@700&family=Noto+Sans&family=Pragati+Narrow&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Overpass:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css.css'%}" />
+    <title>Akhil Sai | projects</title>
+  </head>
+<body>
+    <header class="main-head">
+        <nav class="nav-header">
+            <h2 id="logo">Akhil</h2>
+            <ul class="links">
+                <li><a href="" class="active">Home</a> </li>
+                <li><a href="#benefits">Benefits</a> </li>
+                <li><a href="projects">Projects</a> </li>
+                <li><a href="#signup">Register</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <h2>We Help To Improve!</h2>
+        <h3>
+            we build together,we step together
+        </h3>
+        <br>
+        <h3>Make a choice</h3>
+        <button  class="more" >
+            More</button>
+    </section>
+    <section id="benefits">
+        <header class="benefits-headder">
+            <h2>
+                Benefits
+            </h2>
+            <h3>
+                By sign up you can get our feeds <br>About  new projects that we are going to do<br> 
+And by this you can proceed with us <br>And we are going to provide the project files in this site
+            </h3>
+            <img src="./images/cloud.png" class="moving-cloud-1 cloud" alt="" />
+          <img src="./images/cloud.png" class="moving-cloud-2 cloud" alt="" /> 
+        </header>
+    </section>
+<div id="projects">
+        <section class="projects">
+        <header class="projects-header">
+            <h2>
+                Projects
+            </h2>
+            <h3>
+                Create more to improve more
+            </h3>
+        </header>
+        <div class="cards">
+            <div class="card">
+                <div id="image-back">
+                <img src="{%static 'images/javascript.png'%}">
+                </div>
+                <div class="cards-inn">
+                    <h2>Java Script</h2>
+                <h3>> In web designing</h3>
+                <h3>> In ethical haking</h3>
+                <button class="view">view</button>
+                </div>
+            </div> 
+            <div class="card">
+                <div id="image-back">
+                <img src="{%static 'images/python.png'%}">
+                </div>
+                <div class="cards-inn">
+                    <h2>Python</h2>
+                <h3>> In web development</h3>
+                <h3>> In ethical Haking</h3>
+                <button class="view">view</button>
+                </div>
+            </div> 
+            <div class="card">
+                <div id="image-back">
+                <img src="{%static 'images/bash.jpg'%}">
+                </div>
+                <div class="cards-inn">
+                <h2>Shell Script</h2>
+                <h3>> In ethical haking</h3>
+                <h3>> In networking</h3>
+                <button class="view">view</button>
+                </div>
+                
+            </div> 
+            <div class="card">
+                <div id="image-back">
+                <img src="{%static 'images/sql.png'%}">
+                </div>
+               <div class="cards-inn">
+                 <h2>SQl</h2>
+                <h3>> In web development</h3>
+                <h3>> In ethical haking</h3>
+                 <button class="view">view</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    </div>
+<form class="sign" id="signup" action="register" method="post">
+        {% csrf_token %}
+    <div class="form-main">
+         <h2>
+            Sign Up
+        </h2>
+        <form class="forms-0">
+         <div class="form-1 forms">
+        <label for="name">Name:</label>
+             <input type="text" name="name" required>
+        </div> 
+            <div class="form-2 forms">
+        <label for="email">Email:</label>
+             <input type="email" name="email" required>
+        </div> 
+            <div class="form-3 forms">
+        <label for="passwoard">Passwoard:</label>
+             <input type="password" name="passwoard" required>
+        </div> 
+        </form>
+        <div class="button">
+        <button type="submit" class="button-submit">Submit</button>
+        </div>
+        {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
+
+        {% endfor %}
+
+    {% endif %}
+        </div>
+       
+    </form>
+     <footer> 
+         <div class="footer-around">
+         <h5>Akhil &copy; 2020</h5>
+        <ul>
+            <li ><a href="#"><img src="{%static 'images/instagram.svg'%}"></a></li>
+            <li ><a href="#"><img src="{%static 'images/twitter.svg'%}"></a></li>
+            <li ><a href="#"><img src="{%static 'images/youtube.svg'%}"></a></li>
+            </ul>
+         </div>
+    </footer>
+    <div class="curser">
+        <span class="cursor-text"></span>
+    </div>
+    <div class="loder swip1"></div>
+    <div class="loder swip2"></div>
+    <div class="loder swip3"></div>
+    <div class="loder swip4"></div>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+      integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{%static 'app1.js'%}"></script>
+</body>
+</html>

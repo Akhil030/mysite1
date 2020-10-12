@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+h3 {
+  font-size: 3rem;
+    
+}
+h2 {
+  font-size: 5rem;
+  font-weight: 1rem;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+ 
+}
+ul li a:hover{
+  color: rgb(212, 204, 204);
+
+}
+button{
+    padding: 2rem 6rem;
+  background: #224664;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 0.5s ease-in-out ;
+  margin-top: 2rem;
+}
+button:hover{
+  background-color: #182c3d;
+}
+
+.main-head {
+  background: #07131d;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  padding:0 6rem;
+} 
+nav {
+    display: flex;
+    min-width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;    
+}
+.active{
+    color: #155662;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  
+}
+.hero{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(./images/1.jpg);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(213, 235, 241);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;;
+   
+}
+.hero h2 {
+  padding: 3.5rem;
+    text-decoration: underline;
+}
+/*benefiits*/
+#benefits{
+    min-height: 100vh;
+    background-color: #00131f;
+   background-image: radial-gradient(rgba(7, 49, 72, 0.54), transparent), url(images/new-york-page.png);
+    background-size: cover;
+    background-position: center;
+   display: flex;
+   position: relative;
+   overflow: hidden;
+    z-index: -5;
+    
+}
+.benefits-headder{
+    width: 90%;
+    margin: auto;
+}
+.benefits-headder h2{
+    color: aliceblue;
+    padding-bottom: 3rem;
+  text-decoration: underline;
+}
+.benefits-headder h3{
+    color: #ffffff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2.3rem;
+    margin-bottom: 5rem;
+    color: #C2CBCD;
+    
+}
+.cloud{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.benefits-headder img{
+    height: 50rem;
+}
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+    z-index: -1;
+}
+.moving-cloud-2 {
+  top: 10%;
+  z-index: -2;
+  opacity: 0.5;
+  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+}
+/* Cloud Animation */
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+/*projects*/
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.card h2,
+.card h3 {
+  padding: 1.6rem;
+  line-height: 1.8;
+    font-family: 'ABeeZee', sans-serif;
+}
+.projects-header{
+    min-height: 30vh;
+    background-color: rgb(5, 29, 31);
+    display: flex;
+    flex-direction:column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.projects-header h2{
+    text-decoration: underline;
+}
+.projects{
+    min-height: 90vh;
+    overflow: hidden;
+   
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+     width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.card{
+    align-items: center;
+    flex: 1 1 35rem;
+  min-height: 40%;
+  margin: 2rem 3rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+
+    
+}
+#image-back{
+    background-color: #5D8B95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-inn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-end;
+}
+.see-more{
+  margin-left: 45%;
+    height: 6rem;
+    
+}
+.view{
+    margin: 1rem;
+}
+.projects-header h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3.2rem;
+    padding: 2rem 0;
+}
+/*form and fotter*/
+.sign{
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(1, 48, 54, 0.4), transparent),url(images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-main{
+    background-color: rgba(4, 33, 43,0.7);
+    width: 70%;
+    color: white;
+    border-radius: 20px;
+}
+.form-main h2{
+    text-align: center;
+    padding: 2rem 0;
+}
+.forms-0,.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.forms label{
+    padding: 1rem 0;
+}
+.forms input{
+    padding: 1rem 2rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+footer{
+    background: #004B5B;
+    
+    color: white;
+}
+.footer-around{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-around h5{
+    font-family: 'Lobster', cursive;
+    flex: 1 1 40rem;
+    margin: 1rem 0;
+}
+.footer-around ul{
+    display: flex;
+    justify-content: space-between; 
+    list-style: none;
+    flex: 1 1 40rem;
+}
+.curser{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+     transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: transform;
+  transform-origin: 75% 75%;
+  overflow: hidden;
+}
+
+.curser.curtser-naver,.curtser-logo{
+  background: rgb(4, 44, 63);
+  transform: scale(4);
+}
+.cursor-text{
+  transform: translate(-50%, -50%);
+  color: white;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 0.65rem;
+}
+/* Media Query */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+    .hero{
+        font-size: 0.5rem;
+    }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .benefits-headder h3 {
+    background: rgba(19, 28, 39, 0.5);
+  }
+}
